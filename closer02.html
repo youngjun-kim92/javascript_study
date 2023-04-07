@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+    <script>
+        function Person(name) {
+            let _name=name;
+            return function () {
+                console.log(_name+"님 안녕하세요");
+            };
+        }
+        let chulsu=Person("철수");
+        let gildong=Person("길동");
+        let younghee=Person("영희");
+        chulsu();
+        gildong();
+        younghee();
+        chulsu._name="영표";
+        chulsu();
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

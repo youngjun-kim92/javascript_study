@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체 모델(document object model) - 테스트</title>
+    <script>
+      window.onload=function () {
+        //let head=document.getElementById("header");
+        let head=document.querySelector("#header");
+        head.style.border="2px solid red";
+        head.style.color="orange";
+        head.style.backgroundColor="yellow";
+        let del=document.getElementById("willRemove");
+        document.body.removeChild(del);
+      }
+    </script>
+</head>
+<body>
+   <h1 id="header">자바스크립트</h1>
+   <h1 id="willRemove">코로나 곧 사라짐</h1> 
+</body>
+</html>

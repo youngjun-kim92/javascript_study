@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서 객체 모델(document object model) - 수정2</title>
+    <script>
+      window.onload=function () {
+        let contents=["반갑습니다.","문서객체모델"];
+        //let head=document.getElementsByTagName("h1");
+        //let head=document.getElementsByClassName("header");
+        //let head=document.querySelectorAll("h1");
+        let head=document.querySelectorAll(".header");
+        for(let i=0; i<head.length;i++) {
+          head[i].innerHTML=contents[i];
+        }
+      }
+    </script>
+</head>
+<body>
+   <h1 class="header">안녕하세요</h1>
+   <h1 class="header">브라우저객체모델(BOM)</h1>
+</body>
+</html>

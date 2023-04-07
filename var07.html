@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+    <script>
+      function sum(num1, num2) {
+        return num1+num2;
+      }
+
+      let result=sum(10,20);
+      console.log(result);
+      function hello () {
+        return "여러분 모두 안녕";
+      }
+      let memo=hello();     //()가 없으면 hello 함수 자체가 memo에 들어감/ ()가 있으면 변수를 받아서 return해줘야 함
+      console.log(memo);
+      let plus=sum;         //plus 변수에는 sum 함수가 들어있음
+      console.log(plus(50,30));
+      let haha=hello;
+      console.log(haha());
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

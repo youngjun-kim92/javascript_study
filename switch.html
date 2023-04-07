@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+    <style>
+      body {
+        background-color: #666;
+        color: white;
+      }
+      p {
+        margin-top: 80px;
+        font-size: 2em;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: 1px 2px 1px black;
+      }
+      p strong {
+        font-size: 2.3em;
+        color: #ff0;
+      }
+    </style>
+    <script>
+      let choice=prompt("여행지를 선택해주세요(1.미주, 2.유럽, 3.동남아)");
+      switch(choice) {
+        case "1":
+          document.write("<p>미주여행은 <strong>1층 안내데스크</strong>에서 문의하십시오");
+          break;
+        case "2":
+          document.write("<p>유럽여행은 <strong>2층 안내데스크</strong>에서 문의하십시오");
+          break;
+        case "3":
+          document.write("<p>동남아여행은 <strong>3층 안내데스크</strong>에서 문의하십시오");
+          break;
+        default:
+          alert("여행지 선택이 잘못되었습니다.");
+      }
+    </script>
+</head>
+<body>
+  
+</body>
+</html>

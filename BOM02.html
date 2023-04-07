@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>브라우저 객체 모델(Browser object model)</title>
+    <script>
+      let child=window.open("","","width=600, height=300");
+      let width=screen.width;
+      let height=screen.height;
+      setInterval(function(){
+        child.moveBy(10,10);
+        child.resizeBy(-20, -20);
+      },1000);
+      if(child) {
+        child.moveTo(0,0);
+        child.resizeTo(width,height);
+        child.document.write("<h2>공지사항</h2>");
+        child.document.write("<p>내일부터 문서 객체 모델(DOM)을 시작</p>");
+        child.document.write("<p>내일부터 개인 홈페이지 개인교습을 시작</p>");
+      }
+      else {
+        alert("팝업을 차단을 해제하여 주세요");
+      }
+    </script>
+</head>
+<body>
+   <h1>여기는 메인페이지</h1>
+</body>
+</html>

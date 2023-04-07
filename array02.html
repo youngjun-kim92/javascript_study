@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트</title>
+    <script>
+      /*자기 자신을 변화 : pop, push, reverse, sort, splice, unshift, shift
+        자기 자신이 불변 : concat, join, slice*/
+
+      let fruits1=['바나나','사과','참외','딸기'];
+      let fruits2=['수박','메론','포도'];
+      
+      //concat() : 기본 배열에 새로운 배열을 추가해서 합친 배열
+      let totalfruits=fruits1.concat(fruits2);
+      //console.log(totalfruits);
+      
+      //join() : 배열을 하나의 문자열로 만들어줌        
+      let str=fruits1.join("-");
+      //alert(str);
+      
+      fruits1.push('복숭아','망고');          //맨 뒤에 추가
+      console.log(fruits1);
+      fruits2.unshift('배');                 //맨 앞에 추가
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
